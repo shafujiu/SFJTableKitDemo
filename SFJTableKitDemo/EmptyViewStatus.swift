@@ -20,44 +20,51 @@ enum EmptyViewStatus {
 
 typealias Completion = (Result<Bool, Swift.Error>)->()
 
-protocol TableViewActions {
-    func loadDataAction(_ complate: Completion?)
-    func loadMoreDataAction(_ complate: Completion?)
-}
-
-extension TableViewActions {
-    
-    func loadDataAction(_ complate: Completion?) {
-        
-    }
-    func loadMoreDataAction(_ complate: Completion?) {
-        
-    }
-}
-
-
-protocol TableProtocol: TableViewActions {
-    
-    /// 是否有空页面
-    var enableEmpty: Bool { get }
+protocol TableViewRefreshable {
     /// 是否下拉刷新
     var enableRefreshHeader: Bool { get }
     /// 是否上拉加载
     var enableRefreshFooter: Bool { get }
     
-    var emptyTitle: String { get }
-    var emptyImage: UIImage? { get }
-//    var emptyDataSetShouldDisplay: Bool? { get }
-//    var emptyTapAction: (()->())? { get }
+    func loadDataAction(_ complate: @escaping Completion)
+    func loadMoreDataAction(_ complate: @escaping Completion)
 }
 
-extension TableProtocol {
-    var enableEmpty: Bool { true }
+extension TableViewRefreshable {
     var enableRefreshHeader: Bool { true }
     var enableRefreshFooter: Bool { true }
+    
+    func loadDataAction(_ complate: Completion) {}
+    func loadMoreDataAction(_ complate: Completion) {}
+}
+
+protocol TableEmptyable {
+    
+    /// 是否有空页面
+    var enableEmpty: Bool { get }
+    var emptyVerticalOffset: CGFloat? { get }
+    var emptyTitle: String { get }
+    var emptyImage: UIImage? { get }
+    
+    /// 自定义空页面 ； emptyImage，emptyTitle与 emptyCustomView同时存在的时候 emptyCustomView优先
+    var emptyCustomView: UIView? { get }
+    
+    /// 重写强制展示空页面规则
+    var emptyForcedToDisplay: Bool? { get }
+    var emptyTapAction: (()->())? { get }
+}
+
+extension TableEmptyable {
+    
+    var enableEmpty: Bool { true }
+    var emptyVerticalOffset: CGFloat? {
+        nil
+    }
     var emptyTitle: String { "暂无数据" }
     var emptyImage: UIImage? { nil }
+    var emptyCustomView: UIView? { nil }
+    
+    var emptyForcedToDisplay: Bool? { nil }
     var emptyTapAction: (()->())? {
         nil }
-//    var emptyDataSetShouldDisplay: Bool? { nil }
 }

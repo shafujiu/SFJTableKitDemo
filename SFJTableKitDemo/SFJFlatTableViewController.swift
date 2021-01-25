@@ -22,7 +22,7 @@ class SFJFlatTableViewController: FlatTableViewController<Int> {
     }
 }
 
-extension SFJFlatTableViewController: TableProtocol {
+extension SFJFlatTableViewController: TableEmptyable, TableViewRefreshable {
     
     var enableRefresh: Bool {
         true
@@ -32,36 +32,41 @@ extension SFJFlatTableViewController: TableProtocol {
         "******"
     }
     
-//    var emptyDataSetShouldDisplay: Bool? {
-//        // 自己设定规则， 以决定是否显示
-//        if data.count == 10 {
-//            return true
-//        }else {
-//            return false
-//        }
-//    }
+    var emptyForcedToDisplay: Bool? {
+        data.count == 1
+    }
+
+    var enableRefreshFooter: Bool {
+        data.count > 1
+    }
     
-    func loadDataAction(_ complate: Completion?) {
+    var customView: UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.backgroundColor = .orange
+        return view
+    }
+    
+    func loadDataAction(_ complate: @escaping Completion) {
         // 模拟加载数据
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
             let arr = [1,2,3,4,5,6,7,8,9,10]
-            self.data = arr
-            
+            self.data = [1]
             let noMoreData = true
-            complate?(.success(noMoreData))
+            complate(.success(noMoreData))
 //            let err = NSError(domain: "获取数据失败", code: 100, userInfo: nil)
 //            complate?(.failure(err))
         }
     }
+ 
     
-    func loadMoreDataAction(_ complate: Completion?) {
+    func loadMoreDataAction(_ complate: @escaping Completion) {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
             let arr = [1,2,3,4,5,6,7,8,9,10]
             self.data += arr
             
             let noMoreData = false
-            complate?(.success(noMoreData))
+            complate(.success(noMoreData))
         }
     }
     
