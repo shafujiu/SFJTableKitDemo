@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48BE410CAC4A100DF5D9233A /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65717C31256168A2339152C /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework */; };
+		50DA5409A1D46305420A1711 /* Pods_SFJTableKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664809C1FA6EF8E94CE255EB /* Pods_SFJTableKitDemo.framework */; };
+		81405AEA25B924A7002DF568 /* FlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81405AE925B924A7002DF568 /* FlatTableViewController.swift */; };
+		81405AEF25B9270F002DF568 /* SFJFlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81405AEE25B9270F002DF568 /* SFJFlatTableViewController.swift */; };
 		81670D2025B81FDA001C8883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D1F25B81FDA001C8883 /* AppDelegate.swift */; };
-		81670D2225B81FDA001C8883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D2125B81FDA001C8883 /* SceneDelegate.swift */; };
 		81670D2425B81FDA001C8883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D2325B81FDA001C8883 /* ViewController.swift */; };
 		81670D2725B81FDA001C8883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81670D2525B81FDA001C8883 /* Main.storyboard */; };
 		81670D2925B81FDC001C8883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81670D2825B81FDC001C8883 /* Assets.xcassets */; };
 		81670D2C25B81FDC001C8883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81670D2A25B81FDC001C8883 /* LaunchScreen.storyboard */; };
 		81670D3725B81FDC001C8883 /* SFJTableKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D3625B81FDC001C8883 /* SFJTableKitDemoTests.swift */; };
 		81670D4225B81FDC001C8883 /* SFJTableKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D4125B81FDC001C8883 /* SFJTableKitDemoUITests.swift */; };
+		81670D5925B8226A001C8883 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D5825B8226A001C8883 /* BaseTableViewController.swift */; };
+		81670D5E25B82ADC001C8883 /* EmptyViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */; };
+		F0E07BB356854AB536684049 /* Pods_SFJTableKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6D952620BCD1AE34071E74 /* Pods_SFJTableKitDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF53243ADB88C998ABD7B4F /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemo-SFJTableKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F6D952620BCD1AE34071E74 /* Pods_SFJTableKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFJTableKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4182AEC20DAFDAFD1FABFD6C /* Pods-SFJTableKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemo/Pods-SFJTableKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4F5E3036364CED2DDD8D0EBB /* Pods-SFJTableKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemoTests/Pods-SFJTableKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D78FA4BFE11597ED5654695 /* Pods-SFJTableKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemo/Pods-SFJTableKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		664809C1FA6EF8E94CE255EB /* Pods_SFJTableKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFJTableKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76365E8679A5F3EA4C989C56 /* Pods-SFJTableKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemoTests/Pods-SFJTableKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		81405AE925B924A7002DF568 /* FlatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatTableViewController.swift; sourceTree = "<group>"; };
+		81405AEE25B9270F002DF568 /* SFJFlatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFJFlatTableViewController.swift; sourceTree = "<group>"; };
 		81670D1C25B81FDA001C8883 /* SFJTableKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFJTableKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81670D1F25B81FDA001C8883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81670D2125B81FDA001C8883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		81670D2325B81FDA001C8883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81670D2625B81FDA001C8883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81670D2825B81FDC001C8883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,11 @@
 		81670D3D25B81FDC001C8883 /* SFJTableKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFJTableKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81670D4125B81FDC001C8883 /* SFJTableKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFJTableKitDemoUITests.swift; sourceTree = "<group>"; };
 		81670D4325B81FDC001C8883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81670D5825B8226A001C8883 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewStatus.swift; sourceTree = "<group>"; };
+		81670EB925B85EEF001C8883 /* SFJTableKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFJTableKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B65717C31256168A2339152C /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8805E8758D5BDF76783D5F3 /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DA5409A1D46305420A1711 /* Pods_SFJTableKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E07BB356854AB536684049 /* Pods_SFJTableKitDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BE410CAC4A100DF5D9233A /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50D533328110569F0B3ACDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664809C1FA6EF8E94CE255EB /* Pods_SFJTableKitDemo.framework */,
+				B65717C31256168A2339152C /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework */,
+				3F6D952620BCD1AE34071E74 /* Pods_SFJTableKitDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B9D57B9451BD707CC9B4E62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4182AEC20DAFDAFD1FABFD6C /* Pods-SFJTableKitDemo.debug.xcconfig */,
+				5D78FA4BFE11597ED5654695 /* Pods-SFJTableKitDemo.release.xcconfig */,
+				1DF53243ADB88C998ABD7B4F /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.debug.xcconfig */,
+				F8805E8758D5BDF76783D5F3 /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig */,
+				4F5E3036364CED2DDD8D0EBB /* Pods-SFJTableKitDemoTests.debug.xcconfig */,
+				76365E8679A5F3EA4C989C56 /* Pods-SFJTableKitDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		81670D1325B81FDA001C8883 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,8 @@
 				81670D3525B81FDC001C8883 /* SFJTableKitDemoTests */,
 				81670D4025B81FDC001C8883 /* SFJTableKitDemoUITests */,
 				81670D1D25B81FDA001C8883 /* Products */,
+				7B9D57B9451BD707CC9B4E62 /* Pods */,
+				50D533328110569F0B3ACDEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +147,16 @@
 			isa = PBXGroup;
 			children = (
 				81670D1F25B81FDA001C8883 /* AppDelegate.swift */,
-				81670D2125B81FDA001C8883 /* SceneDelegate.swift */,
 				81670D2325B81FDA001C8883 /* ViewController.swift */,
 				81670D2525B81FDA001C8883 /* Main.storyboard */,
 				81670D2825B81FDC001C8883 /* Assets.xcassets */,
 				81670D2A25B81FDC001C8883 /* LaunchScreen.storyboard */,
 				81670D2D25B81FDC001C8883 /* Info.plist */,
+				81670D5825B8226A001C8883 /* BaseTableViewController.swift */,
+				81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */,
+				81405AE925B924A7002DF568 /* FlatTableViewController.swift */,
+				81405AEE25B9270F002DF568 /* SFJFlatTableViewController.swift */,
+				81670EB925B85EEF001C8883 /* SFJTableKitDemo-Bridging-Header.h */,
 			);
 			path = SFJTableKitDemo;
 			sourceTree = "<group>";
@@ -135,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81670D4625B81FDC001C8883 /* Build configuration list for PBXNativeTarget "SFJTableKitDemo" */;
 			buildPhases = (
+				D09456E273F7739D6E40BC94 /* [CP] Check Pods Manifest.lock */,
 				81670D1825B81FDA001C8883 /* Sources */,
 				81670D1925B81FDA001C8883 /* Frameworks */,
 				81670D1A25B81FDA001C8883 /* Resources */,
+				13445A320ED75FFC561101FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81670D4925B81FDC001C8883 /* Build configuration list for PBXNativeTarget "SFJTableKitDemoTests" */;
 			buildPhases = (
+				3364F17C59518323C86AA1A5 /* [CP] Check Pods Manifest.lock */,
 				81670D2E25B81FDC001C8883 /* Sources */,
 				81670D2F25B81FDC001C8883 /* Frameworks */,
 				81670D3025B81FDC001C8883 /* Resources */,
@@ -170,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81670D4C25B81FDC001C8883 /* Build configuration list for PBXNativeTarget "SFJTableKitDemoUITests" */;
 			buildPhases = (
+				1068C17A7121858E4F75A349 /* [CP] Check Pods Manifest.lock */,
 				81670D3925B81FDC001C8883 /* Sources */,
 				81670D3A25B81FDC001C8883 /* Frameworks */,
 				81670D3B25B81FDC001C8883 /* Resources */,
+				9AF356DC39A81E54BF5714F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +309,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1068C17A7121858E4F75A349 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFJTableKitDemo-SFJTableKitDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13445A320ED75FFC561101FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo/Pods-SFJTableKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo/Pods-SFJTableKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo/Pods-SFJTableKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3364F17C59518323C86AA1A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFJTableKitDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF356DC39A81E54BF5714F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09456E273F7739D6E40BC94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFJTableKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81670D1825B81FDA001C8883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81405AEF25B9270F002DF568 /* SFJFlatTableViewController.swift in Sources */,
+				81670D5925B8226A001C8883 /* BaseTableViewController.swift in Sources */,
 				81670D2425B81FDA001C8883 /* ViewController.swift in Sources */,
+				81670D5E25B82ADC001C8883 /* EmptyViewStatus.swift in Sources */,
 				81670D2025B81FDA001C8883 /* AppDelegate.swift in Sources */,
-				81670D2225B81FDA001C8883 /* SceneDelegate.swift in Sources */,
+				81405AEA25B924A7002DF568 /* FlatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,18 +595,21 @@
 		};
 		81670D4725B81FDC001C8883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4182AEC20DAFDAFD1FABFD6C /* Pods-SFJTableKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C67ZA79SMN;
 				INFOPLIST_FILE = SFJTableKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJTableKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shafujiu/Documents/MyGithubCode/SFJTableKitDemo/SFJTableKitDemo/SFJTableKitDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,18 +617,21 @@
 		};
 		81670D4825B81FDC001C8883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D78FA4BFE11597ED5654695 /* Pods-SFJTableKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C67ZA79SMN;
 				INFOPLIST_FILE = SFJTableKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJTableKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shafujiu/Documents/MyGithubCode/SFJTableKitDemo/SFJTableKitDemo/SFJTableKitDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +639,7 @@
 		};
 		81670D4A25B81FDC001C8883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5E3036364CED2DDD8D0EBB /* Pods-SFJTableKitDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +662,7 @@
 		};
 		81670D4B25B81FDC001C8883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76365E8679A5F3EA4C989C56 /* Pods-SFJTableKitDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +685,7 @@
 		};
 		81670D4D25B81FDC001C8883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF53243ADB88C998ABD7B4F /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +706,7 @@
 		};
 		81670D4E25B81FDC001C8883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8805E8758D5BDF76783D5F3 /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

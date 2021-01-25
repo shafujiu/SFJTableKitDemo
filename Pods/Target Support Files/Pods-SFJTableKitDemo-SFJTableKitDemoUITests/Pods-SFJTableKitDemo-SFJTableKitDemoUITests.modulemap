@@ -1,0 +1,6 @@
+framework module Pods_SFJTableKitDemo_SFJTableKitDemoUITests {
+  umbrella header "Pods-SFJTableKitDemo-SFJTableKitDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
