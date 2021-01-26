@@ -23,6 +23,9 @@
 		81670D4225B81FDC001C8883 /* SFJTableKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D4125B81FDC001C8883 /* SFJTableKitDemoUITests.swift */; };
 		81670D5925B8226A001C8883 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D5825B8226A001C8883 /* BaseTableViewController.swift */; };
 		81670D5E25B82ADC001C8883 /* EmptyViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */; };
+		81D8B29D25BFA7A10005A84A /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8B29C25BFA7A10005A84A /* GroupTableViewController.swift */; };
+		81D8B2A225BFA8440005A84A /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8B2A125BFA8440005A84A /* SectionModel.swift */; };
+		81D8B2A725BFAFAA0005A84A /* SFJGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8B2A625BFAFAA0005A84A /* SFJGroupTableViewController.swift */; };
 		81E3180825BE5697002CEA01 /* EmptyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3180725BE5697002CEA01 /* EmptyTableView.swift */; };
 		F0E07BB356854AB536684049 /* Pods_SFJTableKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6D952620BCD1AE34071E74 /* Pods_SFJTableKitDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,9 @@
 		81670D5825B8226A001C8883 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewStatus.swift; sourceTree = "<group>"; };
 		81670EB925B85EEF001C8883 /* SFJTableKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFJTableKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		81D8B29C25BFA7A10005A84A /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		81D8B2A125BFA8440005A84A /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		81D8B2A625BFAFAA0005A84A /* SFJGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFJGroupTableViewController.swift; sourceTree = "<group>"; };
 		81E3180725BE5697002CEA01 /* EmptyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableView.swift; sourceTree = "<group>"; };
 		B65717C31256168A2339152C /* Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFJTableKitDemo_SFJTableKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8805E8758D5BDF76783D5F3 /* Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SFJTableKitDemo-SFJTableKitDemoUITests/Pods-SFJTableKitDemo-SFJTableKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,10 +171,13 @@
 				8147A0CA25BEC40800152FBF /* BaseScrollView.swift */,
 				81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */,
 				81405AE925B924A7002DF568 /* FlatTableViewController.swift */,
+				81D8B29C25BFA7A10005A84A /* GroupTableViewController.swift */,
 				81405AEE25B9270F002DF568 /* SFJFlatTableViewController.swift */,
+				81D8B2A625BFAFAA0005A84A /* SFJGroupTableViewController.swift */,
 				8147A0C225BEA36C00152FBF /* EmptyTableViewController.swift */,
 				8147A0CF25BECE4F00152FBF /* EmptyScollViewController.swift */,
 				81670EB925B85EEF001C8883 /* SFJTableKitDemo-Bridging-Header.h */,
+				81D8B2A125BFA8440005A84A /* SectionModel.swift */,
 			);
 			path = SFJTableKitDemo;
 			sourceTree = "<group>";
@@ -439,6 +448,9 @@
 				81405AEA25B924A7002DF568 /* FlatTableViewController.swift in Sources */,
 				8147A0D025BECE4F00152FBF /* EmptyScollViewController.swift in Sources */,
 				8147A0C325BEA36C00152FBF /* EmptyTableViewController.swift in Sources */,
+				81D8B2A725BFAFAA0005A84A /* SFJGroupTableViewController.swift in Sources */,
+				81D8B29D25BFA7A10005A84A /* GroupTableViewController.swift in Sources */,
+				81D8B2A225BFA8440005A84A /* SectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

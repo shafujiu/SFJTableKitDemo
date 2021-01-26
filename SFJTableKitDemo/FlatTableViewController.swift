@@ -12,6 +12,5 @@ class FlatTableViewController<T>: BaseTableViewController<T> {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
 }

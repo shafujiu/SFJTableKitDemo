@@ -10,6 +10,7 @@ import EmptyDataSet_Swift
 import SnapKit
 import NVActivityIndicatorView
 
+/// 请不要直接使用该类， 使用其子类FlatTableViewController， GroupTableViewController
 class BaseTableViewController<T>: UIViewController {
     
     var data: [T] = []
@@ -124,7 +125,7 @@ extension BaseTableViewController {
     /// 首次 加载数据是不需要footer
     private func addFooter() {
         if (self as? TableViewRefreshable)?.enableRefreshFooter ?? false,
-           tableView.mj_footer == nil, data.count > 0 {
+           tableView.mj_footer == nil, data.count > 0, !self.tableView.isEmptyDataSetVisible {
             let footer = MJRefreshAutoNormalFooter(refreshingBlock: { [weak self] in
                 self?.refreshFooterAction()
             })
@@ -148,7 +149,7 @@ extension BaseTableViewController {
         }
     }
     
-    func forceDisplay() -> Bool {
+    private func forceDisplay() -> Bool {
         (self as? TableEmptyable)?.emptyForcedToDisplay ?? false
     }
 }
