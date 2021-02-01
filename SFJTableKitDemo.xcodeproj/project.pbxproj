@@ -135,6 +135,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		814FB56125C265B20026D1B7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				81670D5825B8226A001C8883 /* BaseTableViewController.swift */,
+				81E3180725BE5697002CEA01 /* EmptyTableView.swift */,
+				8147A0CA25BEC40800152FBF /* BaseScrollView.swift */,
+				81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */,
+				81405AE925B924A7002DF568 /* FlatTableViewController.swift */,
+				81D8B29C25BFA7A10005A84A /* GroupTableViewController.swift */,
+				81D8B2A125BFA8440005A84A /* SectionModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		81670D1325B81FDA001C8883 = {
 			isa = PBXGroup;
 			children = (
@@ -160,24 +174,18 @@
 		81670D1E25B81FDA001C8883 /* SFJTableKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				814FB56125C265B20026D1B7 /* Base */,
 				81670D1F25B81FDA001C8883 /* AppDelegate.swift */,
 				81670D2325B81FDA001C8883 /* ViewController.swift */,
 				81670D2525B81FDA001C8883 /* Main.storyboard */,
 				81670D2825B81FDC001C8883 /* Assets.xcassets */,
 				81670D2A25B81FDC001C8883 /* LaunchScreen.storyboard */,
 				81670D2D25B81FDC001C8883 /* Info.plist */,
-				81670D5825B8226A001C8883 /* BaseTableViewController.swift */,
-				81E3180725BE5697002CEA01 /* EmptyTableView.swift */,
-				8147A0CA25BEC40800152FBF /* BaseScrollView.swift */,
-				81670D5D25B82ADC001C8883 /* EmptyViewStatus.swift */,
-				81405AE925B924A7002DF568 /* FlatTableViewController.swift */,
-				81D8B29C25BFA7A10005A84A /* GroupTableViewController.swift */,
 				81405AEE25B9270F002DF568 /* SFJFlatTableViewController.swift */,
 				81D8B2A625BFAFAA0005A84A /* SFJGroupTableViewController.swift */,
 				8147A0C225BEA36C00152FBF /* EmptyTableViewController.swift */,
 				8147A0CF25BECE4F00152FBF /* EmptyScollViewController.swift */,
 				81670EB925B85EEF001C8883 /* SFJTableKitDemo-Bridging-Header.h */,
-				81D8B2A125BFA8440005A84A /* SectionModel.swift */,
 			);
 			path = SFJTableKitDemo;
 			sourceTree = "<group>";

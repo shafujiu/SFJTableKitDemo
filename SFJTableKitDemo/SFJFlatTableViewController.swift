@@ -12,7 +12,7 @@ class SFJFlatTableViewController: FlatTableViewController<Int> {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        loadData()
+        loadData(true)
     }
     
     private func setupTableView() {
@@ -24,8 +24,8 @@ class SFJFlatTableViewController: FlatTableViewController<Int> {
 
 extension SFJFlatTableViewController: TableEmptyable, TableViewRefreshable {
     
-    var enableRefresh: Bool {
-        true
+    var enableLoadingPlace: Bool {
+        false
     }
     
     var emptyTitle: String {

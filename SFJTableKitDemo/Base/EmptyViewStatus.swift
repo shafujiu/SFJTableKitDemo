@@ -42,6 +42,7 @@ protocol TableEmptyable {
     
     /// 是否有空页面
     var enableEmpty: Bool { get }
+    var enableLoadingPlace: Bool { get }
     var emptyVerticalOffset: CGFloat? { get }
     var emptyTitle: String { get }
     var emptyImage: UIImage? { get }
@@ -57,6 +58,7 @@ protocol TableEmptyable {
 extension TableEmptyable {
     
     var enableEmpty: Bool { true }
+    var enableLoadingPlace: Bool { true }
     var emptyVerticalOffset: CGFloat? {
         nil
     }

@@ -66,8 +66,12 @@ class BaseTableViewController<T>: UIViewController {
 }
 // MARK: - public api
 extension BaseTableViewController {
-    func loadData() {
-        refreshHeaderAction()
+    func loadData(_ userHeader: Bool = false) {
+        if userHeader {
+            tableView.mj_header?.beginRefreshing()
+        } else {
+            refreshHeaderAction()
+        }
     }
 }
 // MARK: - private api
@@ -165,6 +169,9 @@ extension BaseTableViewController: EmptyDataSetSource, EmptyDataSetDelegate {
     }
     
     func customView(forEmptyDataSet scrollView: UIScrollView) -> UIView? {
+        guard let enableLoading = (self as? TableEmptyable)?.enableLoadingPlace, enableLoading else {
+            return nil
+        }
         switch status {
         case .loading:
             indicator.startAnimating()
@@ -176,15 +183,20 @@ extension BaseTableViewController: EmptyDataSetSource, EmptyDataSetDelegate {
     }
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        var attr: NSAttributedString
+        if let title = (self as? TableEmptyable)?.emptyTitle {
+            attr = NSAttributedString(string: title)
+        } else {
+            attr = NSAttributedString(string: "暂无数据")
+        }
         switch status {
+        case .loading:
+            return nil
+        
         case .error(let errStr):
             return NSAttributedString(string: errStr ?? "数据加载错误")
         default:
-            if let title = (self as? TableEmptyable)?.emptyTitle {
-                return NSAttributedString(string: title)
-            } else {
-                return NSAttributedString(string: "暂无数据")
-            }
+            return attr
         }
     }
     
